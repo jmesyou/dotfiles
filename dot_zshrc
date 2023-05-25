@@ -1,0 +1,18 @@
+
+# initialize starship prompt 
+if type starship &> /dev/null ; then 
+	eval $(starship init zsh)
+fi
+
+# aliases
+
+fn alias_if_exists() {
+    if type $1 &> /dev/null ; then 
+    	alias $1=$2
+    fi 
+} 
+
+alias_if_exists vi nvim 
+alias_if_exists ls exa 
+
+alias please=sudo
