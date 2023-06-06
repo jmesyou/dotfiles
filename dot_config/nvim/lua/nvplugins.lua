@@ -12,6 +12,16 @@ function Plugins.get()
       end,
     },
     {
+      "startup-nvim/startup.nvim",
+      dependencies = {
+	"nvim-telescope/telescope.nvim",
+	"nvim-lua/plenary.nvim",
+      },
+      config = function() 
+	require("startup").setup()
+      end,	
+    },	    
+    {
       "nvim-tree/nvim-tree.lua",
       version = "*",
       dependencies = {
@@ -20,7 +30,7 @@ function Plugins.get()
       config = function()
         require("nvim-tree").setup {}
       end, 
-    }
+    },
   }
 end
 
