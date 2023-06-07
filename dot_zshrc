@@ -1,4 +1,6 @@
 
+. ~/.shrc 
+
 if exists starship ; then 
     eval $(starship init zsh)
 fi
