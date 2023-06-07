@@ -21,7 +21,8 @@ alias_if_exists ls exa
 alias please=sudo
 
 # download starship prompt 
-if ! exists starship ; then 
+if ! exists starship ; then
+  mkdir -p "$HOME/.local/bin"	
   curl -sS https://starship.rs/install.sh | sh -s -- -y --bin-dir "$HOME/.local/bin"
 fi
 
