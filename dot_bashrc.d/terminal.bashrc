@@ -1,4 +1,8 @@
 # starship
-eval "$(starship init bash)"
+if exists starship ; then 
+  eval "$(starship init bash)"
+fi 
 
-export EDITOR="vi"
+if exists vi ; then 
+  export EDITOR="vi"
+fi
