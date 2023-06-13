@@ -26,7 +26,7 @@ if ! exists starship ; then
   curl -sS https://starship.rs/install.sh | sh -s -- -y --bin-dir "$HOME/.local/bin"
 fi
 
-GOBIN="$HOME/go/bin"
-if [ -d "$GOBIN" ] ; then
-  export PATH=$PATH:$GOBIN
+if exists go ; then
+  export GOPATH=$(go env GOPATH)
+  export PATH=$PATH:$GOPATH/bin
 fi
