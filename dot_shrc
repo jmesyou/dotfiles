@@ -26,6 +26,17 @@ if ! exists starship ; then
   curl -sS https://starship.rs/install.sh | sh -s -- -y --bin-dir "$HOME/.local/bin"
 fi
 
+# python
+if exists python3 ; then 
+  python3 -m ensurepip --upgrade 
+fi 
+
+if exists pip3 ; then 
+  pip3 install --user pipx
+  pipx ensurepath
+fi  
+
+# go
 if exists go ; then
   export GOPATH=$(go env GOPATH)
   export PATH=$PATH:$GOPATH/bin
