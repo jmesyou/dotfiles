@@ -43,4 +43,8 @@ fi
 if exists go ; then
   export GOPATH=$(go env GOPATH)
   export PATH=$PATH:$GOPATH/bin
-fi
+fi 
+
+if exists kitty ; then 
+  alias ssh="kitty +kitten ssh"
+fi 
