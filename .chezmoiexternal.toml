@@ -1,0 +1,9 @@
+[".emacs.d"]
+  type = "git-repo"
+  url = "https://github.com/syl20bnr/spacemacs"
+  refreshPeriod = "48h"
+[".config/kitty/kitty-themes"]
+  type = "git-repo"
+  url = "https://github.com/dexpota/kitty-themes.git"
+  refreshPeriod = "0"
+
