@@ -20,9 +20,6 @@ alias_if_exists vi nvim
 alias_if_exists ls exa 
 alias please=sudo
 
-# environment 
-export EDITOR=vi
-
 # download starship prompt 
 if ! exists starship ; then
   mkdir -p "$HOME/.local/bin"	
