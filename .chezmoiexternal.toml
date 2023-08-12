@@ -1,9 +1,12 @@
 [".emacs.d"]
   type = "git-repo"
-  url = "https://github.com/syl20bnr/spacemacs"
+  url = "https://github.com/syl20bnr/spacemacs.git"
   refreshPeriod = "48h"
+[".gdbinit"]
+  type = "file"
+  url = "https://git.io/.gdbinit"
+  refreshPeriod = "168h"
 [".config/kitty/kitty-themes"]
   type = "git-repo"
   url = "https://github.com/dexpota/kitty-themes.git"
   refreshPeriod = "0"
-
