@@ -16,13 +16,3 @@
 [alias]
 	lol     = log --graph --pretty=format:\"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cr)%Creset %C(green)%<(8,trunc)%ce%Creset %s\" --max-count=10
   	lolfull = log --graph --pretty=format:\"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cr)%Creset %C(green)%<(8,trunc)%ce%Creset %s\"
-[credential]
-	helper = "!f() { /root/.vscode-server/bin/b3e4e68a0bc097f0ae7907b217c1119af9e03435/node /tmp/vscode-remote-containers-f8d7f322-2fc3-451f-9e27-1427111c4232.js git-credential-helper $*; }; f"
-[safe]
-	directory = /workspaces/openj9-openjdk-development
-	directory = /workspaces/openj9-openjdk-development
-	directory = /workspaces/openj9-openjdk-development/jdk11
-	directory = /workspaces/openj9-openjdk-development/jdk17
-	directory = /workspaces/openj9-openjdk-development/jdk8
-	directory = /workspaces/openj9-openjdk-development/omr
-	directory = /workspaces/openj9-openjdk-development/openj9

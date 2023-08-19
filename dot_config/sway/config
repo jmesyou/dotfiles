@@ -38,7 +38,7 @@ set $menu fuzzel \
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg
-output * bg /usr/share/backgrounds/default.png fill
+output * bg ~/.config/sway/background.png fill
 output eDP-1 scale 1.75
 #
 # Example configuration:
@@ -216,10 +216,6 @@ bindsym $mod+r mode "resize"
 # Window customization
 #
 
-bar {
-    swaybar_command waybar 
-}
-
 # Include configs from 3 locations:
 #  - /usr/share/sway/config.d
 #  - /etc/sway/config.d
@@ -242,5 +238,4 @@ bar {
 # the trick, it's all in the `wordexp(3)`.
 #
 
-include $HOME/.config/sway/config.d/*.conf
 include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "/etc/sway/config.d/*.conf" "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'

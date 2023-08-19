@@ -1,0 +1,20 @@
+@define-color base   #1a1b26;
+@define-color mantle #414868;
+@define-color crust  #565f89;
+
+@define-color text     #a9b1d6;
+@define-color subtext0 #c0caf5;
+@define-color subtest1 #9aa5ce;
+
+@define-color red       #f7768e;
+@define-color tangerine #ff9e64;
+@define-color yellow    #e0af68;
+@define-color green     #9ece6a;
+@define-color aqua      #da7383;
+@define-color celeste   #b4f9f8;
+@define-color blue      #2ac3de;
+@define-color blue1     #7dcfff;
+@define-color blue2     #7aa2f7;
+@define-color violet    #bb9af7;
+
+@define-color highlight #cfc9c2;
