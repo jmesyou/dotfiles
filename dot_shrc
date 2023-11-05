@@ -27,14 +27,14 @@ if ! exists starship ; then
 fi
 
 # python
-if ! exists pip3 ; then 
-  python3 -m ensurepip --upgrade 
-fi 
+if ! exists pip3 ; then
+  python3 -m ensurepip --upgrade
+fi
 
-if ! exists pipx ; then 
+if ! exists pipx ; then
   pip3 install --user pipx
   pipx ensurepath
-fi  
+fi
 
 # go
 if exists go ; then
@@ -42,6 +42,8 @@ if exists go ; then
   export PATH=$PATH:$GOPATH/bin
 fi 
 
-if exists kitty ; then 
+if [[ -n "${KITTY_WINDOW_ID}" ]] ; then 
   alias ssh="kitty +kitten ssh"
-fi 
+fi
+
+[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
