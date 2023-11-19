@@ -1,5 +1,7 @@
 
-. ~/.shrc 
+if [ -f ~/.init.sh ]; then 
+    emulate sh -c 'source ~/.init.sh'
+fi
 
 if exists starship ; then 
     eval $(starship init zsh)

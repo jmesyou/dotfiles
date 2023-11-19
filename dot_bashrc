@@ -16,7 +16,10 @@ export PATH
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-. ~/.shrc
+
+if [ -f ~/.init.sh ]; then 
+	. ~/.init.sh
+fi
 
 if [ -d ~/.bashrc.d ]; then
 	for rc in ~/.bashrc.d/*; do
