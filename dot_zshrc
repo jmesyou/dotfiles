@@ -5,4 +5,15 @@ fi
 
 if exists starship ; then 
     eval $(starship init zsh)
+fi 
+
+# direnv
+if exists direnv ; then 
+    eval "$(direnv hook zsh)"
 fi
+
+# sdkman
+if [ ! -f "$HOME/sdkman/bin/sdkman-init.sh" ]; then 
+    source "$HOME/.sdkman/bin/sdkman-init.sh"
+fi
+

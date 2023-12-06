@@ -49,5 +49,3 @@ if [[ -n "${KITTY_WINDOW_ID}" ]] ; then
   alias ssh="kitty +kitten ssh"
 fi
 
-# sdkman 
-[[ -s "~/.sdkman/bin/sdkman-init.sh" ]] && source "~/.sdkman/bin/sdkman-init.sh"
