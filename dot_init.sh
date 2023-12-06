@@ -29,15 +29,14 @@ if ! exists starship ; then
 fi
 
 # python
-if ! exists pip3 ; then
+if ! exists pip3 && exists python ; then
   python3 -m ensurepip --upgrade
-fi
 
-if ! exists pipx ; then
-  pip3 install --user pipx
-  pipx ensurepath
+  if ! exists pipx ; then
+    pip3 install --user pipx
+    pipx ensurepath
+  fi
 fi
-
 # go
 if exists go ; then
   export GOPATH=$(go env GOPATH)
