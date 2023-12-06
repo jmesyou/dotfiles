@@ -1,9 +1,9 @@
 # starship
-if exists starship ; then 
+if command -v starship ; then 
   eval "$(starship init bash)"
 fi
 # direnv 
-if exists direnv ; then
+if command -v direnv ; then
   eval "$(direnv hook bash)"
 fi
 
