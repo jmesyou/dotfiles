@@ -16,7 +16,8 @@ end
 config.color_scheme = 'Tokyo Night'
 config.font         = wezterm.font_with_fallback {
   'Fira Code',
-  'Fira Mono'
+  'Fira Mono',
+  'JetBrains Mono',
 }
 config.font_size    = 16.0
 -- and finally, return the configuration to wezterm
