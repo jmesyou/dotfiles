@@ -8,7 +8,8 @@ if command -v direnv ; then
 fi
 
 # sdkman 
-if [ ! -f "$HOME/sdkman/bin/sdkman-init.sh" ]; then 
-  source "$HOME/.sdkman/bin/sdkman-init.sh"
+SDKMAN_DIR="$HOME/.sdkman"
+if [ ! -f "$SDKMAN_DIR/bin/sdkman-init.sh" ]; then 
+  source "$SDKMAN_DIR/bin/sdkman-init.sh"
 fi
 
