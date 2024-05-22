@@ -19,7 +19,15 @@ config.font         = wezterm.font_with_fallback {
   'Fira Mono',
   'JetBrains Mono',
 }
-config.font_size    = 16.0
+
+config.font_size    = 12.0
+
+if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
+  -- We are running on Windows; maybe we emit different
+  -- key assignments here?
+  config.default_prog = { 'pwsh.exe' }
+end
+
 -- and finally, return the configuration to wezterm
 return config
 
