@@ -14,13 +14,13 @@ function Plugins.get()
     {
       "startup-nvim/startup.nvim",
       dependencies = {
-	"nvim-telescope/telescope.nvim",
-	"nvim-lua/plenary.nvim",
+	      "nvim-telescope/telescope.nvim",
+	      "nvim-lua/plenary.nvim",
       },
-      config = function() 
-	require("startup").setup()
-      end,	
-    },	    
+      config = function()
+	      require("startup").setup()
+       end,
+    },
     {
       "nvim-tree/nvim-tree.lua",
       version = "*",
@@ -29,7 +29,7 @@ function Plugins.get()
       },
       config = function()
         require("nvim-tree").setup {}
-      end, 
+      end,
     },
     {
       "nvim-lualine/lualine.nvim",
@@ -37,7 +37,7 @@ function Plugins.get()
         "nvim-tree/nvim-web-devicons"
       },
       config = function()
-	require("lualine").setup()
+	      require("lualine").setup()
       end,
     },
   }
