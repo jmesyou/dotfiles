@@ -15,3 +15,4 @@ if (Check-Command -Name starship) {
 if (Check-Command -Name direnv) {
   Invoke-Expression "$(direnv hook pwsh)"
 }
+
