@@ -1,6 +1,4 @@
-cd:
 {{- if eq .chezmoi.os "windows" }}
+cd:
   command: pwsh.exe
-{{- else }}
-  command: {{ .chezmoi.cd.command }}
 {{- end }}
