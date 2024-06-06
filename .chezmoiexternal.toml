@@ -1,6 +1,6 @@
-[".SpaceVim"]
+[".config/nvim"]
   type = "git-repo"
-  url = "https://spacevim.org/git/repos/SpaceVim/"
+  url = "https://github.com/LazyVim/starter"
   refreshPeriod = "48h"
 [".emacs.d"]
   type = "git-repo"
@@ -13,5 +13,9 @@
 [".config/kitty/kitty-themes"]
   type = "git-repo"
   url = "https://github.com/dexpota/kitty-themes.git"
+  refreshPeriod = "0"
+["AppData/Local/services/vs-code-server/vscodeserver.exe"]
+  type = "file"
+  url = "https://github.com/winsw/winsw/releases/download/v2.12.0/WinSW-x64.exe"
   refreshPeriod = "0"
 
