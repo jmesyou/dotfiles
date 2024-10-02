@@ -10,6 +10,10 @@
   type = "file"
   url = "https://git.io/.gdbinit"
   refreshPeriod = "168h"
+[".gdbinit.d/llvm/prettyprinters.py"]
+  type = "file"
+  url = "https://raw.githubusercontent.com/llvm/llvm-project/main/llvm/utils/gdb-scripts/prettyprinters.py"
+  refreshPeriod = "168h"
 [".config/kitty/kitty-themes"]
   type = "git-repo"
   url = "https://github.com/dexpota/kitty-themes.git"
