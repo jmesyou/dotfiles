@@ -4,11 +4,11 @@ README.md
 {{- if ne .chezmoi.os "windows" }}
 AppData
 Documents
+{{- else if ne .chezmoi.os "linux" }}
 .bashrc
 .bashrc.d
-.zshrc
-{{- else if ne .chezmoi.os "linux" }}
 .config/sway
 .config/swaybar
 .config/waybar
+.zshrc
 {{- end }}
