@@ -10,6 +10,7 @@
 	process = git-lfs filter-process
 [core]
 	editor = vi
+	filemode = false
 [user]
 	name = James You
 	email = james.you@protonmail.com
