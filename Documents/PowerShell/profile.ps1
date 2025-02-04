@@ -11,7 +11,7 @@ if (Check-Command -Name eza) {
 }
 
 if (Check-Command -Name oh-my-posh) {
-  $Theme = "clean-detailed"
+  $Theme = "stelbent-compact.minimal"
   oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/$Theme.omp.json" | Invoke-Expression
 } elseif (Module-Exists PowerLine) {
   Import-Module PowerLine
