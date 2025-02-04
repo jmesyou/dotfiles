@@ -1,11 +1,15 @@
+{{- if eq .chezmoi.os "windows" }}
+["AppData/Local/nvim"]
+{{- else }}
 [".config/nvim"]
+{{- end }}
   type = "git-repo"
   url = "https://github.com/LazyVim/starter"
-  refreshPeriod = "48h"
+  refreshPeriod = "168h"
 [".emacs.d"]
   type = "git-repo"
   url = "https://github.com/syl20bnr/spacemacs.git"
-  refreshPeriod = "48h"
+  refreshPeriod = "168h"
 [".gdbinit"]
   type = "file"
   url = "https://git.io/.gdbinit"
@@ -14,12 +18,4 @@
   type = "file"
   url = "https://raw.githubusercontent.com/llvm/llvm-project/main/llvm/utils/gdb-scripts/prettyprinters.py"
   refreshPeriod = "168h"
-[".config/kitty/kitty-themes"]
-  type = "git-repo"
-  url = "https://github.com/dexpota/kitty-themes.git"
-  refreshPeriod = "0"
-["AppData/Local/services/vs-code-server/vscodeserver.exe"]
-  type = "file"
-  url = "https://github.com/winsw/winsw/releases/download/v2.12.0/WinSW-x64.exe"
-  refreshPeriod = "0"
 
