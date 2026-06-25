@@ -1,0 +1,4 @@
+{{ if eq .chezmoi.os "darwin" -}}
+#!/bin/zsh 
+zsh <(curl -s https://raw.githubusercontent.com/zap-zsh/zap/master/install.zsh) --keep --branch release-v1
+{{ end -}}
