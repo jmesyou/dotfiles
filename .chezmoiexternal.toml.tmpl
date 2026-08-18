@@ -11,12 +11,4 @@
   type = "file"
   url = "https://raw.githubusercontent.com/llvm/llvm-project/main/llvm/utils/gdb-scripts/prettyprinters.py"
   refreshPeriod = "168h"
-{{- if eq .chezmoi.os "windows" }}
-["AppData/Local/nvim"]
-{{- else }}
-[".config/nvim"]
-{{- end }}
-  type = "git-repo"
-  url = "https://github.com/LazyVim/starter"
-  refreshPeriod = "168h"
 
